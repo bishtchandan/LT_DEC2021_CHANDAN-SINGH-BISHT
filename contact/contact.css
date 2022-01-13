@@ -174,7 +174,7 @@ span{
 }
 .footer-content p{
   font-size: 2rem;
-  padding: .5rem 0;
+  padding: .5rem .5rem;
   color: rgb(226, 224, 224);
 }
 
@@ -260,4 +260,5 @@ span{
 .footer img{
   display: none;
 }
+
 }
