@@ -1,0 +1,297 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+body {
+  background-color: #fff;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: "Ubuntu", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+/* header section */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  background-color: #eee;
+}
+.header span{
+    color: rgb(59, 132, 161);
+}
+
+.header .logo {
+  font-size: 2rem;
+  margin-left: 10rem;
+  color: #111;
+} 
+.navbar{
+  margin-right: 6rem;
+}
+.navbar a {
+  font-size: 1.8rem;
+  padding: .8rem 2rem;
+  color: #111;
+}
+.navbar a:hover{
+  background-color: rgb(59, 132, 161);
+  color: #fff;
+}
+
+/* home section starts here */
+.home{
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home h3{
+    font-size: 3rem;
+    color: #fff;
+    margin-top: -4rem;
+    font-weight: 800;
+  }
+.home-content{
+  margin-left: 15rem;
+}
+.home p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.btn{
+    margin: .5rem;
+    font-size: 1.7rem;
+    padding: .8rem 1.5rem;
+    background-color: rgb(59, 132, 161);
+    color: #fff;
+    border-radius: .7rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* main section starts here */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.main-content{
+    margin-left: 12rem;
+}
+.main-content h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.main-content p{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+/* learning section */
+
+.learning h2{
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 3rem;
+}
+.learning h3{
+  font-size: 1.7rem;
+  padding: .5rem 0;
+  margin-top: 1rem;
+}
+.learning p{
+  font-size: 1.5rem;
+  padding: .5rem 6rem;
+  line-height: 1.4;
+}
+.learning-cards{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.learning img{
+  height: 200px;
+  width: 250px;
+}
+
+/* footer section */
+.footer{
+  background-color: rgb(59, 132, 161);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+.footer .btn{
+  margin-top: 6rem ;
+  margin-bottom: 1rem ;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: rgb(59, 132, 161);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.footer-content{
+  margin-bottom: 1rem;
+}
+
+.footer-content h3{
+  font-size: 2rem;
+  padding: .5rem 0;
+  color: #fff;
+}
+.footer-content p{
+  font-size: 2rem;
+  padding: .5rem 0;
+  color: rgb(226, 224, 224);
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons a{
+  font-size: 4rem;
+  padding: 1.5rem 2rem;
+  color: #fff;
+}
+
+.footer img{
+  height: 50px;
+  width: 50px;
+  margin-top: 5rem;
+  position: absolute;
+  right: 5rem;
+}
+
+
+
+
+
+@media screen and (max-width: 890px) {
+  html{
+    overflow-x: hidden;
+  }
+  /* home */
+  .home h3{
+    font-size: 2rem;
+    margin-top: -1.2rem;
+}
+.home-content{
+  margin-left: 11rem;
+}
+.home p{
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+/* main */
+.main img{
+  height: 300px;
+  width: 400px;
+}
+
+/* learning  */
+.learning img{
+  height: 150px;
+  width: 200px;
+}
+.learning p{
+  font-size: 1.3rem;
+  padding: .5rem 4rem;
+}
+.footer img{
+  right: 1rem;
+}
+}
+
+@media screen and (max-width: 650px) {
+  /* navbar */
+  .navbar{
+    display: flex;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .header .logo{
+    margin: 0;
+  }
+  .main{
+    margin: 0;
+  }
+  .main-content{
+    margin: 0 4rem;
+    text-align: center;
+  }
+  .main img{
+    margin-top: 3rem;
+    height: 280px;
+    width: 280px;
+  }
+  /* home */
+  .home h3{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    color: rgb(31, 30, 30);
+}
+.home-content{
+  margin-left: 0;
+}
+.home p{
+    font-size: 1rem;
+    line-height: 1.2;
+    color: rgb(31, 30, 30);
+    font-weight: 700;
+}
+.btn{
+  font-size: 1.5rem;
+}
+/* main */
+div#main-img{
+  order: 1;
+}
+div#main-content{
+  order: 2;
+}
+.main {
+  flex-wrap: wrap;
+}
+
+/* learning  */
+.learning-cards{
+  flex-wrap: wrap;
+}
+
+.btn{
+  margin-bottom: 5rem;
+}
+.footer img{
+  display: none;
+}
+}

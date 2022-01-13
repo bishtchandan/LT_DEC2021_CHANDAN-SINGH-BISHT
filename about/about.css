@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+  body {
+    background-color: #fff;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: "Ubuntu", sans-serif;
+  }
+  html{
+      font-size: 62.5%;
+  }
+  
+  /* header section */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: #eee;
+  }
+  .header span{
+      color: rgb(59, 132, 161);
+  }
+  
+  .header .logo {
+    font-size: 2rem;
+    margin-left: 10rem;
+    color: #111;
+  } 
+  .navbar{
+    margin-right: 6rem;
+  }
+  .navbar a {
+    font-size: 1.8rem;
+    padding: .8rem 2rem;
+    color: #111;
+  }
+  .navbar a:hover{
+      background-color: rgb(59, 132, 161);
+      color: #fff;
+  }
+
+  /* about section */
+  .about{
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      margin: 2rem 6rem;
+  }
+  .about-content{
+      margin-left: 5rem;
+  }
+  .about h2{
+      font-size: 3rem;
+      padding: .5rem 0;
+  }
+  .about p{
+      font-size: 1.7rem;
+      padding: .5rem 0;
+      line-height: 1.5;
+  }
+  .about img{
+      height: 300px;
+      width: 500px;
+  }
+
+  .btn{
+      margin: 1rem 0;
+      font-size: 1.7rem;
+      font-weight: 600;
+      background-color: rgb(59, 132, 161);
+      color: #fff;
+      padding: .8rem 1.5rem;
+      border-radius: .4rem;
+      cursor: pointer;
+  }
+  /* know us section */
+  .know-us{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem 0;
+  }
+  .know-us h2{
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  .line{
+      background-color: rgb(59, 132, 161);
+      padding: .2rem 0;
+      width: 11rem;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+  }
+  .know-us-cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .know-us-cards h3{
+    font-size: 1.7rem;
+    padding: .5rem 0;
+  }
+  .know-us-cards p{
+    font-size: 1.4rem;
+    padding: .5rem 5rem;
+    line-height: 1.3;
+  }
+
+  .know-us img{
+    height: 50px;
+    width: 50px;
+  }
+  .members{
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .members h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .members h3{
+    font-size: 1.7rem;
+    padding: .5rem 0;
+  }
+  .members p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+  }
+  .member-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3rem 3rem;
+  }
+  .members img{
+    height: 200px;
+    width: 200px;
+  }
+
+  /* footer section */
+.footer{
+  background-color: rgb(59, 132, 161);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 15rem;
+}
+.footer .btn{
+  margin-top: 6rem ;
+  margin-bottom: 1rem ;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: rgb(59, 132, 161);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.footer-content{
+  margin-bottom: 1rem;
+}
+
+.footer-content h3{
+  font-size: 2rem;
+  padding: .5rem 0;
+  color: #fff;
+}
+.footer-content p{
+  font-size: 2rem;
+  padding: .5rem 0;
+  color: rgb(226, 224, 224);
+}
+
+.footer-container{
+  display: flex;
+}
+
+.icons a{
+  font-size: 4rem;
+  padding: 1.5rem 2rem;
+  color: #fff;
+}
+
+.footer img{
+  height: 50px;
+  width: 50px;
+  margin-top: 1rem;
+  position: absolute;
+  right: 3rem;
+}
+
+
+@media screen and (max-width: 890px) {
+  /* header section */
+  
+  
+  .header .logo {
+    font-size: 2rem;
+    margin-left: 8rem;
+    color: #111;
+  }
+  /* about section */
+  .about{
+    margin: 0;
+}
+.about-content{
+  margin: 0;
+}
+.about img{
+    height: 280px;
+    width: 400px;
+}
+/* know us section */
+
+.know-us-cards p{
+padding: .5rem 1rem;
+}
+.member-cards{
+  margin: 0 8rem;
+}
+.member-cards div{
+  padding-top: 3rem;
+}
+}
+@media screen and (max-width: 650px) {
+  /* header section */
+  .header .logo{
+    margin: 0;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .navbar{
+    margin: 0;
+    margin-top: 2rem;
+  }
+  /* about section */
+  .about{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-content{
+  margin: 0 2rem;
+}
+.about img{
+  margin-top: 3rem;
+    height: 280px;
+    width: 290px;
+}
+/* know us section */
+
+.know-us-cards{
+padding: .5rem 2rem;
+flex-wrap: wrap;
+}
+.know-us-cards div{
+padding: 2rem;
+}
+.member-cards{
+  margin: 0;
+  justify-content: center;
+}
+.member-cards div{
+  padding-top: 3rem;
+}
+.footer img{
+  display: none;
+}
+}

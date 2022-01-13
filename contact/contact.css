@@ -1,0 +1,263 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+  body {
+    background-color: #fff;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: "Ubuntu", sans-serif;
+  }
+  html{
+      font-size: 62.5%;
+  }
+  
+  /* header section */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background-color: #eee;
+  }
+  .header span{
+      color: rgb(59, 132, 161);
+  }
+  
+  .header .logo {
+    font-size: 2rem;
+    margin-left: 10rem;
+    color: #111;
+  } 
+  .navbar{
+    margin-right: 6rem;
+  }
+  .navbar a {
+    font-size: 1.8rem;
+    padding: .8rem 2rem;
+    color: #111;
+  }
+  .navbar a:hover{
+      background-color: rgb(59, 132, 161);
+      color: #fff;
+  }
+
+  /* contact section */
+
+  .contact{
+    background: url(../img/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+  .contact-content h2{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: #fff;
+    font-weight: 800;
+  }
+  .contact-content p{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+    font-weight: 500;
+  }
+  .contact-content a{
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgb(59, 132, 161);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 1rem;
+  }
+
+  /* contact-form section */
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-right: 15rem;
+  }
+  .contact-form h4{
+    font-size: 3rem;
+    padding: .5rem 0;
+  }
+  .contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+  .input{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+  }
+  .input input{
+    font-size: 1.7rem;
+  }
+  .input textarea{
+    font-size: 1.7rem;
+  }
+  .line{
+    padding: 1px 0;
+    background-color: rgb(59, 132, 161);
+    width: 50rem;
+    margin-left: 38rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn{
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background-color: rgb(59, 132, 161);
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+span{
+  font-size: 3rem;
+}
+
+/* footer section */
+.footer{
+  background-color: rgb(59, 132, 161);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+.footer .btn{
+  margin-top: 6rem ;
+  margin-bottom: 1rem ;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: rgb(59, 132, 161);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.footer-content{
+  margin-bottom: 1rem;
+}
+
+.footer-content h3{
+  font-size: 2rem;
+  padding: .5rem 0;
+  color: #fff;
+}
+.footer-content p{
+  font-size: 2rem;
+  padding: .5rem 0;
+  color: rgb(226, 224, 224);
+}
+
+.footer-container{
+  display: flex;
+}
+
+.icons a{
+  font-size: 4rem;
+  padding: 1.5rem 2rem;
+  color: #fff;
+}
+
+.footer img{
+  height: 50px;
+  width: 50px;
+  margin-top: 5rem;
+  position: absolute;
+  right: 5rem;
+}
+
+
+
+
+@media screen and (max-width: 890px) {
+  /* contact-form section */
+  .contact-form form{
+    justify-content: center;
+  }
+  .line{
+    width: 40rem;
+    margin-left: 28rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* header section */
+  .header {
+    flex-direction: column;
+  }
+  
+  .header .logo {
+    margin-left: 0;
+  } 
+  .navbar{
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+  /* contact-form section */
+  .contact-form{
+    justify-content: center;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  .contact-form form{
+    margin-top: 2rem;
+  }
+  .line{
+    width: 22rem;
+    margin-left: 10rem;
+  }
+  .contact-content h2{
+    font-size: 2.7rem;
+  }
+  .contact-content p{
+    margin-bottom: 2rem;
+  }
+  .contact-content a{
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: .5rem;
+  }
+  .btn{
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+}
+.contact-form h4{
+  font-size: 2.6rem;
+}
+
+span{
+  font-size: 2.5rem;
+}
+.footer img{
+  display: none;
+}
+}
